@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://Interface/" targetNamespace="http://Interface/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/Emp?xsd=1" namespace="http://Interface/" />
+    </xsd:schema>
+  </types>
+  <message name="findBy">
+    <part name="parameters" element="tns:findBy" />
+  </message>
+  <message name="findByResponse">
+    <part name="parameters" element="tns:findByResponse" />
+  </message>
+  <message name="insertEm">
+    <part name="parameters" element="tns:insertEm" />
+  </message>
+  <message name="insertEmResponse">
+    <part name="parameters" element="tns:insertEmResponse" />
+  </message>
+  <portType name="IDAOEmpreint">
+    <operation name="findBy">
+      <input xmlns:ns1="http://www.w3.org/2007/05/addressing/metadata" ns1:Action="http://Interface/IDAOEmpreint/findByRequest" message="tns:findBy" />
+      <output xmlns:ns2="http://www.w3.org/2007/05/addressing/metadata" ns2:Action="http://Interface/IDAOEmpreint/findByResponse" message="tns:findByResponse" />
+    </operation>
+    <operation name="insertEm">
+      <input xmlns:ns3="http://www.w3.org/2007/05/addressing/metadata" ns3:Action="http://Interface/IDAOEmpreint/insertEmRequest" message="tns:insertEm" />
+      <output xmlns:ns4="http://www.w3.org/2007/05/addressing/metadata" ns4:Action="http://Interface/IDAOEmpreint/insertEmResponse" message="tns:insertEmResponse" />
+    </operation>
+  </portType>
+</definitions>

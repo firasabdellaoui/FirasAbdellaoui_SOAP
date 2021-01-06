@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://Interface/" targetNamespace="http://Interface/" version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="findBy" type="tns:findBy" />
+  <xs:element name="findByResponse" type="tns:findByResponse" />
+  <xs:element name="insertEtud" type="tns:insertEtud" />
+  <xs:element name="insertEtudResponse" type="tns:insertEtudResponse" />
+  <xs:complexType name="findBy">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="findByResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertEtud">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="xs:string" />
+      <xs:element minOccurs="0" name="arg1" type="xs:string" />
+      <xs:element minOccurs="0" name="arg2" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="insertEtudResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

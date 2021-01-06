@@ -1,0 +1,4 @@
+typeBD=MySQL
+Url=jdbc:mysql://localhost:3306
+login=
+pwd=

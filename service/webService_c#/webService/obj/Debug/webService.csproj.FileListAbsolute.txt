@@ -1,0 +1,10 @@
+E:\9raya\soa\webService\webService\bin\Debug\webService.exe.config
+E:\9raya\soa\webService\webService\bin\Debug\webService.exe
+E:\9raya\soa\webService\webService\bin\Debug\webService.pdb
+E:\9raya\soa\webService\webService\obj\Debug\webService.csprojAssemblyReference.cache
+E:\9raya\soa\webService\webService\obj\Debug\webService.Form1.resources
+E:\9raya\soa\webService\webService\obj\Debug\webService.Properties.Resources.resources
+E:\9raya\soa\webService\webService\obj\Debug\webService.csproj.GenerateResource.cache
+E:\9raya\soa\webService\webService\obj\Debug\webService.csproj.CoreCompileInputs.cache
+E:\9raya\soa\webService\webService\obj\Debug\webService.exe
+E:\9raya\soa\webService\webService\obj\Debug\webService.pdb

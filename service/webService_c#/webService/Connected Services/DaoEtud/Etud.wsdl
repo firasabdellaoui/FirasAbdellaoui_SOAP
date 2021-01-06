@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://Interface/" targetNamespace="http://Interface/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="http://localhost:8080/Etud?xsd=1" namespace="http://Interface/" />
+    </xsd:schema>
+  </types>
+  <message name="findBy">
+    <part name="parameters" element="tns:findBy" />
+  </message>
+  <message name="findByResponse">
+    <part name="parameters" element="tns:findByResponse" />
+  </message>
+  <message name="insertEtud">
+    <part name="parameters" element="tns:insertEtud" />
+  </message>
+  <message name="insertEtudResponse">
+    <part name="parameters" element="tns:insertEtudResponse" />
+  </message>
+  <portType name="IDAOEtudiant">
+    <operation name="findBy">
+      <input xmlns:ns1="http://www.w3.org/2007/05/addressing/metadata" ns1:Action="http://Interface/IDAOEtudiant/findByRequest" message="tns:findBy" />
+      <output xmlns:ns2="http://www.w3.org/2007/05/addressing/metadata" ns2:Action="http://Interface/IDAOEtudiant/findByResponse" message="tns:findByResponse" />
+    </operation>
+    <operation name="insertEtud">
+      <input xmlns:ns3="http://www.w3.org/2007/05/addressing/metadata" ns3:Action="http://Interface/IDAOEtudiant/insertEtudRequest" message="tns:insertEtud" />
+      <output xmlns:ns4="http://www.w3.org/2007/05/addressing/metadata" ns4:Action="http://Interface/IDAOEtudiant/insertEtudResponse" message="tns:insertEtudResponse" />
+    </operation>
+  </portType>
+</definitions>

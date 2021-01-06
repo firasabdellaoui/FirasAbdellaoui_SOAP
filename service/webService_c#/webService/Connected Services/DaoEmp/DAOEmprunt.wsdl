@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:tns="http://DAO/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp1_2="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" name="DAOEmprunt" targetNamespace="http://DAO/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <import namespace="http://Interface/" location="http://localhost:8080/Emp?wsdl=1" />
+  <types />
+  <binding xmlns:ns1="http://Interface/" name="DAOEmpruntPortBinding" type="ns1:IDAOEmpreint">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="findBy">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="insertEm">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="DAOEmprunt">
+    <port name="DAOEmpruntPort" binding="tns:DAOEmpruntPortBinding">
+      <soap:address location="http://localhost:8080/Emp" />
+    </port>
+  </service>
+</definitions>
